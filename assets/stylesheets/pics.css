@@ -1,0 +1,25 @@
+body{
+  background: #ffffff;
+}
+
+section.head{
+  margin-top: 90px;
+}
+
+section.quick-links{
+  font-family: 'Oswald', sans-serif;
+  margin-left: 420px;
+  margin-top: 10px;
+  display: inline-block;
+    padding: 10px 35px;
+    border-top: 1px solid #27659A;
+    line-height: 1px;
+    width: 420px;
+    text-decoration: none;
+}
+
+section.quick-links > ul > li{
+  display: inline-block;
+  margin-left: 10px;
+  margin-right: 10px;
+  text-shadow:

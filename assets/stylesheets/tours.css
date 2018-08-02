@@ -1,0 +1,102 @@
+h1{
+  font-size: 60px;
+  color: #6AB4DC;
+  text-align: center;
+  font-family: 'Ubuntu Condensed', sans-serif;
+}
+
+body{
+  background: #ffffff;
+}
+
+section.head{
+  margin-top: 90px;
+  margin-right: 90px;
+  font-family: 'Oswald', sans-serif;
+  text-align: right;
+}
+
+section.image-one img{
+  margin-left: 15px;
+  margin-top: 60px;
+}
+
+p.bounding-box{
+  width: 1250px;
+  height: 280px;
+  margin-left: 15px;
+  border: 2px #27659A dotted;
+}
+
+table{
+  font-family: 'Ubuntu Condensed', sans-serif;
+  font-size: 16pt;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.column {
+  float: left;
+  width: 22.25%;
+  padding: 5px;
+  margin-left: 26px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+section.image-six img{
+  margin-left: 15px;
+  margin-top: 10px;
+  border-bottom: 25px;
+}
+
+p {
+  font-size: 100px;
+  color: #6AB4DC;
+  text-align: center;
+  background-image:url(https://img.peru21.pe/files/article_main/uploads/2018/01/19/5a62647ee7462.jpeg);
+}
+
+table {
+    width: 1250px;
+    margin-left: 15px;
+    margin-top: 25px;
+}
+
+th {
+    height: 50px;
+}
+
+th {
+    background-color: #6AB4DC;
+    color: white;
+    text-align: center;
+  }
+
+th, td {
+    border-bottom: 1px solid #ddd;
+}
+
+tr:hover {background-color: #f5f5f5;}
+
+section.quick-links{
+  font-family: 'Oswald', sans-serif;
+  margin-left: 420px;
+  margin-top: 10px;
+  display: inline-block;
+    padding: 10px 35px;
+    border-top: 1px solid #27659A;
+    line-height: 1px;
+    width: 420px;
+    text-decoration: none;
+}
+
+section.quick-links > ul > li{
+  display: inline-block;
+  margin-left: 5px;
+  margin-right: 5px;
+  text-shadow:
