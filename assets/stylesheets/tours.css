@@ -25,7 +25,6 @@ p.bounding-box{
   width: 1250px;
   height: 280px;
   margin-left: 15px;
-  border: 2px #27659A dotted;
 }
 
 table{
@@ -55,10 +54,10 @@ section.image-six img{
 }
 
 p {
-  font-size: 100px;
+  font-size: 170px;
   color: #6AB4DC;
   text-align: center;
-  background-image:url(https://img.peru21.pe/files/article_main/uploads/2018/01/19/5a62647ee7462.jpeg);
+  background-image:url(http://www.la92.com/wp-content/uploads/2017/11/Carlos-Vives-1.jpg);
 }
 
 table {
@@ -87,16 +86,17 @@ section.quick-links{
   font-family: 'Oswald', sans-serif;
   margin-left: 420px;
   margin-top: 10px;
+  text-align: center;
   display: inline-block;
     padding: 10px 35px;
     border-top: 1px solid #27659A;
     line-height: 1px;
-    width: 420px;
+    width: 450px;
     text-decoration: none;
 }
 
 section.quick-links > ul > li{
   display: inline-block;
-  margin-left: 5px;
-  margin-right: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
   text-shadow:
