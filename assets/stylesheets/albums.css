@@ -28,6 +28,11 @@ table{
   margin-top: 40px;
 }
 
+table, th{
+  border: 10px solid white;
+
+}
+
 section.image-two img{
     box-shadow: 10px 10px 8px #888888
 }
