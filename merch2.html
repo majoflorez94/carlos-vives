@@ -79,9 +79,12 @@
     </thead>
     <tbody>
       <tr>
-      <td>
+      <td><script src="popup.js"></script>
         $25.00
-        T-shirt CV <img src="./assets/images/shoppingcar.png" width="40" height="40" />
+        T-shirt CV <div class="popup" onclick="myFunction()">
+          <img src="./assets/images/shoppingcar.png" width="40" height="40" />
+          <span class="popuptext" id="myPopup">SOLD OUT</span>
+        </div>
       </td>
       <td>
         $25.00
@@ -96,9 +99,12 @@
   </tbody>
 </table>
 
-<section class="image-five">
-  <img src="./assets/images/carlos-vives-merch-bottom.png" width="1230" height="430"
-   alt="carlos vives rock de mi pueblo" /></section>
+<script>
+  function myFunction() {
+    var popup = document.getElementById("myPopup");
+    popup.classList.toggle("show");
+}
+</script>
 
 <section class="quick-links">
   <ul>

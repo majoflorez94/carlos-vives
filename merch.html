@@ -84,7 +84,7 @@
         La Bicicleta Graphic
         Leather Jacket <div class="popup" onclick="myFunction()">
           <img src="./assets/images/shoppingcar.png" width="40" height="40" />
-          <span class="popuptext" id="myPopup">SOLD OUT</span>
+          <span class="popuptext" id="myPopup"> SOLD OUT </span>
         </div>
       </td>
       <td>
@@ -102,70 +102,11 @@
 </table>
 
 <script>
-function myFunction() {
+  function myFunction() {
     var popup = document.getElementById("myPopup");
     popup.classList.toggle("show");
 }
 </script>
-
-<div class="slideshow-container">
-  <div class="mySlides fade">
-    <div class="numbertext">1 / 3</div>
-    <img src="./assets/images/carlos-vives-merch-bottom.png" width="1230" height="450">
-    <div class="text"> Vives Tour </div>
-  </div>
-
-  <div class="mySlides fade">
-    <div class="numbertext">2 / 3</div>
-    <img src="./assets/images/carlos-vives-merch-bottom2.jpg" width:"1230" height="450">
-    <div class="text"> Vives</div>
-  </div>
-
-  <div class="mySlides fade">
-    <div class="numbertext">3 / 3</div>
-    <img src="./assets/images/carlos-vives-merch-bottom3.jpg" width:"1230" height="450">
-    <div class="text"> Song </div>
-  </div>
-
-  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-<a class="next" onclick="plusSlides(1)">&#10095;</a>
-</div>
-<br>
-
-  <div style="text-align:center">
-    <span class="dot" onclick="currentSlide(1)"></span>
-    <span class="dot" onclick="currentSlide(2)"></span>
-    <span class="dot" onclick="currentSlide(3)"></span>
-  </div>
-
-  <script>
-  var slideIndex = 1;
-  showSlides(slideIndex);
-
-  function plusSlides(n) {
-    showSlides(slideIndex += n);
-  }
-
-  function currentSlide(n) {
-    showSlides(slideIndex = n);
-  }
-
-  function showSlides(n) {
-    var i;
-    var slides = document.getElementsByClassName("mySlides");
-    var dots = document.getElementsByClassName("dot");
-    if (n > slides.length) {slideIndex = 1}
-    if (n < 1) {slideIndex = slides.length}
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-    }
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-    }
-    slides[slideIndex-1].style.display = "block";
-    dots[slideIndex-1].className += " active";
-  }
-  </script>
 
 <section class="quick-links">
   <ul>

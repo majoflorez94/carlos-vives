@@ -4,45 +4,78 @@
 <head>
   <meta charset="utf-8" />
   <title> Pics </title>
-
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-  integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link href="./assets/stylesheet/bootstrap.css" rel="stylesheet" type="text/css" />
-
-    <link href="./assets/stylesheets/pics.css" rel="stylesheet" type="text/css" />
-
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <!-- <link href="./assets/stylesheet/bootstrap.css" rel="stylesheet" type="text/css" /> -->
+  <link href="./assets/stylesheets/pics.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
-
-<section class="head">
-  <h1> This is the Carlos Vives Pictures Page</h1>
-</section>
+  <section class="head">
+    <div class="container">
+      <h1> This is the Carlos Vives Pictures Page</h1>
+    </div>
+  </section>
 
   <nav class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-            data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="/">  <img src="./assets/images/carlos-vives-logo.png"
-              width="35" height="35" alt="carlos vives logo" /> </a>
-          </div>
-          <div id="navbar" class="collapse navbar-collapse">
-            <ul class="nav navbar-nav">
-              <li><a href="about.html"> About </a></li>
-              <li><a href="albums.html"> Albums </a></li>
-              <li><a href="merch.html"> Merch </a></li>
-              <li><a href="tours.html"> Tours </a></li>
-              <li><a href="pics.html"> Pictures </a></li>
-            </ul>
-          </div>
-        </div>
-      </nav>
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+        data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="/">  <img src="./assets/images/carlos-vives-logo.png"
+          width="35" height="35" alt="carlos vives logo" /> </a>
+      </div>
+      <div id="navbar" class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li><a href="about.html"> About </a></li>
+          <li><a href="albums.html"> Albums </a></li>
+          <li><a href="merch.html"> Merch </a></li>
+          <li><a href="tours.html"> Tours </a></li>
+          <li><a href="pics.html"> Pictures </a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="slideshow">
+    <div class="slideshow-container">
+
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 3</div>
+        <img src="./assets/images/carlos-vives-merch-bottom.png" width="1230" height="450" />
+        <div class="text"> Vives Tour </div>
+      </div>
+
+      <!-- <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+        <img src="./assets/images/carlos-vives-merch-bottom2.jpg" width:"1230" height="450" />
+        <div class="text"> Vives</div>
+      </div> -->
+
+      <!-- <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <img src="./assets/images/carlos-vives-merch-bottom3.jpg" width:"1230" height="450" />
+        <div class="text"> Song </div>
+      </div> -->
+
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+
+    <br>
+
+    <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
+
+</section>
 
 <section class="quick-links">
   <ul>
@@ -64,6 +97,41 @@
   </ul>
 </section>
 
+<script   src="https://code.jquery.com/jquery-3.3.1.min.js"
+integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+crossorigin="anonymous"></script>
+<script>
+  var slideIndex = 1;
+  showSlides(slideIndex);
+
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+
+  function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+  }
+</script>
 </body>
 
 </html>
