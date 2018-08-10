@@ -7,6 +7,7 @@ section.head{
 }
 
 section.image-one img{
+  margin-bottom: 25px;
   box-shadow: 10px 10px 8px #888888
 }
 
@@ -18,27 +19,15 @@ div.container-one {
     font-family: 'Oswald', sans-serif;
 }
 
+ul{
+  margin-left: 90px;
+}
+
 div.centered {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-}
-
-ul.menu {
-    list-style-type: none;
-    margin: 15px;
-    width: 1230px;
-    position: sticky;
-}
-li.menu{
-    display: inline;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 24px;
-    color: #666;
 }
 
 table{
@@ -47,12 +36,19 @@ table{
 }
 
 table, th{
-  width: 340PX;
+  width: 340px;
+}
+
+table, tr, th{
+  border-radius: 25px;
+  border: 1px #3333 solid;
+  border-top: none;
 }
 
 table, tr, td{
   text-align: center;
 }
+
 
 div.popup {
     position: relative;
@@ -104,14 +100,14 @@ div.popup .show {
 
 section.quick-links{
   font-family: 'Oswald', sans-serif;
-  margin-left: 420px;
-  margin-top: 10px;
-  text-align: center;
+  margin-left: 320px;
+  margin-top: 15px;
   display: inline-block;
-    padding: 10px 35px;
+    padding: 10px 1px;
     border-top: 1px solid #27659A;
     line-height: 1px;
-    width: 450px;
+    width: 620px;
+    text-align: left;
     text-decoration: none;
 }
 

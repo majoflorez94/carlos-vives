@@ -28,6 +28,7 @@ p {
   margin-bottom: 120px;
   margin-right: 25px;
   text-align: justify;
+  border: 1px #3333 solid;
 }
 
 section.image-two img{
