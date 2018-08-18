@@ -56,7 +56,9 @@ section.image-six img{
 p {
   font-size: 150px;
   color: #6AB4DC;
+  text-shadow: 2px 2px #ffffff;
   text-align: center;
+  padding-top: 35px;
   background-image:url(https://scontent-lax3-2.xx.fbcdn.net/v/t1.0-9/39497494_10156672149118383_3371348958545707008_n.jpg?_nc_cat=0&oh=556e3d31c1da99bee0e6528ec85e5599&oe=5C0DC87D);
   background-repeat: no-repeat, repeat;
   background-position: center;
