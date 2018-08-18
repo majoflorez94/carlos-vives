@@ -59,12 +59,30 @@ section.image-three img{
   }
 
   p.third{
-      margin-left: 25px;
-      width: 300px;
-      text-align: justify;
-
+    font-family: 'Poiret One', cursive;
+    font-size: 18px;
+    margin-top: 40px;
+    margin-bottom: 5px;
+    margin-right: 25px;
+    text-align: center;
+    border: 1px #3333 solid;
  }
+p.fourth{
+  border: none;
+  text-align: center;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
 
+p.five{
+  font-family: 'Poiret One', cursive;
+  font-size: 18px;
+  margin-top: 20px;
+  margin-bottom: 5px;
+  margin-right: 25px;
+  text-align: center;
+  border: 1px #3333 solid;
+}
  section.image-fourth img{
      float: right;
      margin-top: 10px;
